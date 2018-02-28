@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Portable London</string>
+    <string name="restaurants">RESTAURANTS</string>
+    <string name="poi">POINT OF INTEREST</string>
+    <string name="history">HISTORICAL PLACES</string>
+    <string name="transport">TRANSPORT</string>
+</resources>
