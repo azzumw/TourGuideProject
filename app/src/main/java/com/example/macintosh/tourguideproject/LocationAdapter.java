@@ -17,10 +17,10 @@ import java.util.List;
  * Created by macintosh on 01/03/2018.
  */
 
-public class LocationAdapter extends ArrayAdapter<Location> {
+public class LocationAdapter<L> extends ArrayAdapter<Location> {
 
-    public LocationAdapter(@NonNull Context context, int resource, @NonNull List objects) {
-        super(context, resource, objects);
+    public LocationAdapter(@NonNull Context context, @NonNull ArrayList<Location> objects) {
+        super(context, 0, objects);
     }
 
     @NonNull
@@ -35,11 +35,13 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         Location currentLocation = getItem(position);
 
         TextView nameTV = listItemView.findViewById(R.id.list_item_name);
+        TextView descTV = listItemView.findViewById(R.id.list_item_desc);
         TextView nameaddress = listItemView.findViewById(R.id.list_item_address);
         TextView namephone = listItemView.findViewById(R.id.list_item_phone);
         ImageView imageView = listItemView.findViewById(R.id.list_item_image_view);
 
         nameTV.setText(currentLocation.getName());
+        descTV.setText(currentLocation.getDescription());
         nameaddress.setText(currentLocation.getAddress());
         namephone.setText(currentLocation.getPhonenumber());
         if(currentLocation.isHasImage())

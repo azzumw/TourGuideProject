@@ -19,8 +19,12 @@
         <activity
             android:name=".TransportActivity"
             android:label="@string/transport"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".RestaurantANDcafeActivity"></activity>
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RestaurantANDcafeActivity"
+            android:label="@string/restaurants"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

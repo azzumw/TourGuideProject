@@ -2,7 +2,7 @@
     <string name="app_name">Old Street</string>
     <string name="restaurants">RESTAURANTS/CAFEs</string>
     <string name="poi">POINT OF INTEREST</string>
-    <string name="history">HISTORICAL PLACES</string>
+    <string name="shops">Local shops</string>
     <string name="transport">TRANSPORT</string>
     <string name="title_activity_transport">TransportActivity</string>
 </resources>
