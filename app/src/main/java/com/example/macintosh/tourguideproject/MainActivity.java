@@ -12,6 +12,8 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
     private TextView cafesTV;
+    private TextView localshopsTV;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +21,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         cafesTV = findViewById(R.id.cafesTV);
+        localshopsTV = findViewById(R.id.localshopsTV);
 
         cafesTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,RestaurantANDcafeActivity.class);
+                intent = new Intent(MainActivity.this,RestaurantANDcafeActivity.class);
                 startActivity(intent);
             }
         });
+
+        localshopsTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(MainActivity.this,LocalShopsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }
