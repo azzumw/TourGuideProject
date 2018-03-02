@@ -8,7 +8,8 @@ public class Location {
     private String name;
     private String address;
     private String phonenumber;
-    private int imageResID;
+    private int imageResID = -1;
+
 
     public Location(String name, String address) {
         this.name = name;
@@ -48,5 +49,9 @@ public class Location {
 
     public String getPhonenumber() {
         return phonenumber;
+    }
+
+    public boolean isHasImage() {
+        return imageResID != -1;
     }
 }

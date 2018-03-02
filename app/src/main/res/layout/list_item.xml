@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/list_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:id="@+id/list_item_image_view"/>
+
+
+    <TextView
+        android:id="@+id/list_item_name"
+        android:layout_width="295dp"
+        android:layout_height="22dp"
+        android:gravity="bottom"
+        android:text="Name"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/list_item_image_view" />
+
+    <TextView
+        android:id="@+id/list_item_address"
+        android:layout_width="295dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/list_item_name"
+        android:gravity="left"
+        android:text="Address"
+        app:layout_constraintLeft_toRightOf="@+id/list_item_image_view"
+        app:layout_constraintTop_toBottomOf="@id/list_item_name" />
+
+    <TextView
+        android:id="@+id/list_item_phone"
+        android:layout_width="295dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/list_item_address"
+        android:gravity="left"
+        android:text="Phone"
+        app:layout_constraintLeft_toRightOf="@+id/list_item_image_view"
+        app:layout_constraintTop_toBottomOf="@id/list_item_address" />
+
+
+</android.support.constraint.ConstraintLayout>
