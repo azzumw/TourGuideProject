@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView cafesTV;
     private TextView localshopsTV;
+    private TextView poiTV;
+
     Intent intent;
 
     @Override
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         cafesTV = findViewById(R.id.cafesTV);
         localshopsTV = findViewById(R.id.localshopsTV);
+        poiTV = findViewById(R.id.poiTV);
 
         cafesTV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 intent = new Intent(MainActivity.this,LocalShopsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        poiTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(MainActivity.this,PoiActivity.class);
                 startActivity(intent);
             }
         });

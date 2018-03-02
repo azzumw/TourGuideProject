@@ -23,12 +23,15 @@
         <activity
             android:name=".RestaurantANDcafeActivity"
             android:label="@string/restaurants"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
-        <activity android:name=".LocalShopsActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".LocalShopsActivity"
             android:label="@string/shops"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PoiActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/poi">
+
         </activity>
     </application>
 

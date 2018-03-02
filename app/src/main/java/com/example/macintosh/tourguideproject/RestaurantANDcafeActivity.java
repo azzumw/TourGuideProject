@@ -7,7 +7,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class RestaurantANDcafeActivity extends AppCompatActivity {
-    ArrayList<Location> list_cafes_rest;
+    private ArrayList<Location> list_cafes_rest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
