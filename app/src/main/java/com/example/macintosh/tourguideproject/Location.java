@@ -24,6 +24,13 @@ public class Location {
         this.imageResID = imageResID;
     }
 
+    public Location(String name, String address, int imageResID, String description){
+        this.name = name;
+        this.address = address;
+        this.imageResID = imageResID;
+        this.description = description;
+    }
+
     public Location(String name, String address, String phonenumber,String description) {
         this.name = name;
         this.address = address;

@@ -44,6 +44,7 @@ public class LocationAdapter<L> extends ArrayAdapter<Location> {
         descTV.setText(currentLocation.getDescription());
         nameaddress.setText(currentLocation.getAddress());
         namephone.setText(currentLocation.getPhonenumber());
+
         if(currentLocation.isHasImage())
             imageView.setImageResource(currentLocation.getImageResID());
         else{

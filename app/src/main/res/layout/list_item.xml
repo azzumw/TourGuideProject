@@ -30,7 +30,8 @@
         android:layout_width="295dp"
         android:layout_height="22dp"
         android:gravity="bottom"
-        android:text="Name"
+        android:text="@string/name"
+        android:textColor="@color/tabtextcolor"
         android:textAppearance="?android:textAppearanceMedium"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -43,7 +44,7 @@
         android:layout_height="22dp"
         android:layout_below="@id/list_item_desc"
         android:gravity="left"
-        android:text="Description"
+        android:text="@string/description"
         app:layout_constraintLeft_toRightOf="@+id/list_item_card_view"
         app:layout_constraintTop_toBottomOf="@id/list_item_name" />
 
@@ -54,7 +55,7 @@
         android:layout_height="22dp"
         android:layout_below="@id/list_item_desc"
         android:gravity="left"
-        android:text="Address"
+        android:text="@string/address"
         app:layout_constraintLeft_toRightOf="@+id/list_item_card_view"
         app:layout_constraintTop_toBottomOf="@id/list_item_desc" />
 
@@ -65,7 +66,7 @@
         android:layout_height="22dp"
         android:layout_below="@id/list_item_address"
         android:gravity="left"
-        android:text="Phone"
+        android:text="@string/phone"
         app:layout_constraintLeft_toRightOf="@+id/list_item_card_view"
         app:layout_constraintTop_toBottomOf="@id/list_item_address" />
 

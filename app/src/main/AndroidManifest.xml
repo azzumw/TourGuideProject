@@ -17,20 +17,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TransportActivity"
-            android:label="@string/transport"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".RestaurantANDcafeActivity"
             android:label="@string/restaurants"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".LocalShopsActivity"
             android:label="@string/shops"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HotelActivity"
+            android:label="@string/poi"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".PoiActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/poi">
+
+        <activity android:name=".GymActivity"
+            android:label="@string/fitness"
+            android:parentActivityName=".MainActivity">
 
         </activity>
     </application>

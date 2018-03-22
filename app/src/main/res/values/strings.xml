@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">Old Street</string>
     <string name="restaurants">Eatery</string>
-    <string name="poi">POINT OF INTEREST</string>
+    <string name="poi">Hotels</string>
     <string name="shops">Local shops</string>
-    <string name="transport">TRANSPORT</string>
+    <string name="fitness">Fitness</string>
     <string name="title_activity_transport">TransportActivity</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+
+
 </resources>
