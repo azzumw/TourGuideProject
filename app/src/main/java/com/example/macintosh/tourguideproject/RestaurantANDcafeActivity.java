@@ -5,7 +5,6 @@ import android.os.Bundle;
 
 public class RestaurantANDcafeActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,6 +13,5 @@ public class RestaurantANDcafeActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, new RestaurantCafeFragment())
                 .commit();
-
     }
 }

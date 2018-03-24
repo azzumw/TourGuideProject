@@ -13,6 +13,5 @@ public class HotelActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, new HotelFragment())
                 .commit();
-
     }
 }

@@ -9,8 +9,10 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter{
-
-
+    private final String CAFE = "Cafes";
+    private final String SHOPS = "Shops";
+    private final String HOTELS = "Hotels";
+    private final String FITNESS = "Fitness";
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -30,10 +32,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter{
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
-            case 0: return "CAFEs";
-            case 1: return "SHOPS";
-            case 2: return  "HOTELS";
-            case 3: return "FITNESS";
+            case 0: return CAFE;
+            case 1: return SHOPS;
+            case 2: return HOTELS;
+            case 3: return FITNESS;
             default:return null;
         }
     }

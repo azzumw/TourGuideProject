@@ -18,10 +18,7 @@ public class HotelFragment extends Fragment {
 
     private ArrayList<Location> hotel_lists;
 
-    public HotelFragment() {
-        // Required empty public constructor
-    }
-
+    public HotelFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,21 +26,18 @@ public class HotelFragment extends Fragment {
 
         View rootview = inflater.inflate(R.layout.activity_locationlist,container,false);
 
-
         hotel_lists = new ArrayList<>();
 
-        hotel_lists.add(new Location("Premier Inn","East Road, Old Street",R.drawable.preminn,"Affordable and Luxury Hotel"));
-        hotel_lists.add(new Location("Travelodge","City Road",R.drawable.travelodge,"Affordable and Luxury Hotel"));
-        hotel_lists.add(new Location("The Z Hotel Shoreditch","136-144 City Rd, London",R.drawable.zhotel,"Trendy and Affordable living"));
-        hotel_lists.add(new Location("The Hoxton","81 Great Easterb Road",R.drawable.thehoxton,"Urban-Chic hotel surrounded by bars"));
-        hotel_lists.add(new Location("EasyHotel", "80 Old Street", R.drawable.easyhotel,"Utilitarian Red Brick Hotel offering spartan rooms"));
-        hotel_lists.add(new Location("Thistle City Barbican", "Central Street",R.drawable.thistle, "Luxury hotel only 10 mins walk from old street"));
-        hotel_lists.add(new Location("Court House hotel", "335 Old Street", R.drawable.courthouse,"hip up-market hotel"));
-        hotel_lists.add(new Location("M By Montcalm Shoreditch Tech City ", "151 City Road", R.drawable.montcalm,"3 Mins Walk From Old Street Station"));
-        hotel_lists.add(new Location("Point a Hotel", "8 Paul Street", R.drawable.pointhotel,"Surrounded by buzzy bars and vibrant restaurants"));
-        hotel_lists.add(new Location("citizenM London Shoreditch hotel", "275 Old Street", R.drawable.citizenm,"Opposite Great Eastern Street"));
-
-
+        hotel_lists.add(new Location(getString(R.string.premier_inn),getString(R.string.eastRdOldSt),R.drawable.preminn,getString(R.string.descriptionOne)));
+        hotel_lists.add(new Location(getString(R.string.travelodge),getString(R.string.cityRoad),R.drawable.travelodge,getString(R.string.descriptionOne)));
+        hotel_lists.add(new Location(getString(R.string.theZHotel),"136-144 "+ getString(R.string.cityRoad) + getString(R.string.london),R.drawable.zhotel,getString(R.string.descriptionTwo)));
+        hotel_lists.add(new Location(getString(R.string.theHoxton),"81 " +getString(R.string.greateastRd),R.drawable.thehoxton,getString(R.string.descriptionThree)));
+        hotel_lists.add(new Location(getString(R.string.easyHotle), "80 "+getString(R.string.oldst), R.drawable.easyhotel,getString(R.string.descriptionFour)));
+        hotel_lists.add(new Location(getString(R.string.thistle), getString(R.string.centralst),R.drawable.thistle, getString(R.string.descFive)));
+        hotel_lists.add(new Location(getString(R.string.courthouse), "335 "+ getString(R.string.oldst), R.drawable.courthouse,getString(R.string.descSix)));
+        hotel_lists.add(new Location(getString(R.string.montcalm), "151 " + getString(R.string.cityRoad), R.drawable.montcalm,getString(R.string.descSeven)));
+        hotel_lists.add(new Location(getString(R.string.pointahotel), getString(R.string.paulst), R.drawable.pointhotel,getString(R.string.descEight)));
+        hotel_lists.add(new Location(getString(R.string.citizenm), "275 "+ getString(R.string.oldst), R.drawable.citizenm,getString(R.string.descNine)));
 
         LocationAdapter<Location> itemsAdapter = new LocationAdapter<>(getActivity(), hotel_lists);
 
@@ -54,5 +48,4 @@ public class HotelFragment extends Fragment {
         return rootview;
 
     }
-
 }

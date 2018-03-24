@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:id="@+id/cafelistview"
     android:divider="@color/tabtextcolor"
-    android:dividerHeight="2px"
+    android:dividerHeight="1dp"
     tools:context="com.example.macintosh.tourguideproject.RestaurantANDcafeActivity">
-
 </ListView>

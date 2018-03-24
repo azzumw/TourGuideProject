@@ -5,7 +5,6 @@ import android.os.Bundle;
 
 public class GymActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -13,7 +12,5 @@ public class GymActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, new GymFragment())
                 .commit();
-
-
     }
 }

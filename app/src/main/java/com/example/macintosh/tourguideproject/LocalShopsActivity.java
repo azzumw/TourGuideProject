@@ -5,8 +5,6 @@ import android.os.Bundle;
 
 public class LocalShopsActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +13,5 @@ public class LocalShopsActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, new LocalShopsFragment())
                 .commit();
-
     }
 }
