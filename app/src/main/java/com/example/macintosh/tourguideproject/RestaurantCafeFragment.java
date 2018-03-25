@@ -20,7 +20,6 @@ public class RestaurantCafeFragment extends Fragment {
 
     public RestaurantCafeFragment() {}
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -29,16 +28,16 @@ public class RestaurantCafeFragment extends Fragment {
 
         list_cafes_rest = new ArrayList<>();
 
-        list_cafes_rest.add(new Location(getString(R.string.curiouscafe),"Pitfield Street","567876546",getString(R.string.cafe_desc_one),R.drawable.yellowcafe));
-        list_cafes_rest.add(new Location(getString(R.string.monika),"Pitfield Street","567876546",getString(R.string.cafe_desc_two),R.drawable.summermonika));
-        list_cafes_rest.add(new Location(getString(R.string.cj),"Bevenden Street","567876546",getString(R.string.cafe_desc_two),R.drawable.coffeejunc));
-        list_cafes_rest.add(new Location(getString(R.string.starbks),"Old Street Roudabout","567876546",getString(R.string.cafe_desc_three),R.drawable.starbucks));
-        list_cafes_rest.add(new Location(getString(R.string.cc),"Old Street Roudabout","567876546",getString(R.string.cafe_desc_four),R.drawable.cc));
-        list_cafes_rest.add(new Location(getString(R.string.mexi),"Old Street Roudabout","567876546",getString(R.string.cafe_desc_five),R.drawable.mexican));
-        list_cafes_rest.add(new Location(getString(R.string.shoreditchgrind),"Old Street Roudabout","567876546",getString(R.string.cafe_desc_six),R.drawable.shoreditchgrind));
-        list_cafes_rest.add(new Location(getString(R.string.ceviche),"Old Street Roudabout","567876546",getString(R.string.cafe_desc_seven),R.drawable.ceviche));
-        list_cafes_rest.add(new Location(getString(R.string.jamie),"Old Street Roudabout","567876546",getString(R.string.cafe_desc_eight),R.drawable.fifteen));
-        list_cafes_rest.add(new Location(getString(R.string.nandos),"City Road","567876546",getString(R.string.cafe_desc_nine),R.drawable.nandos));
+        list_cafes_rest.add(new Location(getString(R.string.curiouscafe),getString(R.string.pitfieldstreet),getString(R.string.phonenum),getString(R.string.cafe_desc_one),R.drawable.yellowcafe));
+        list_cafes_rest.add(new Location(getString(R.string.monika),getString(R.string.pitfieldstreet),getString(R.string.phonenum),getString(R.string.cafe_desc_two),R.drawable.summermonika));
+        list_cafes_rest.add(new Location(getString(R.string.cj),getString(R.string.bevenden),getString(R.string.phonenum),getString(R.string.cafe_desc_two),R.drawable.coffeejunc));
+        list_cafes_rest.add(new Location(getString(R.string.starbks),getString(R.string.oldstround),getString(R.string.phonenum),getString(R.string.cafe_desc_three),R.drawable.starbucks));
+        list_cafes_rest.add(new Location(getString(R.string.cc),getString(R.string.oldstround),getString(R.string.phonenum),getString(R.string.cafe_desc_four),R.drawable.cc));
+        list_cafes_rest.add(new Location(getString(R.string.mexi),getString(R.string.oldstround),getString(R.string.phonenum),getString(R.string.cafe_desc_five),R.drawable.mexicanexpress));
+        list_cafes_rest.add(new Location(getString(R.string.shoreditchgrind),getString(R.string.oldstround),getString(R.string.phonenum),getString(R.string.cafe_desc_six),R.drawable.shoreditchgrind));
+        list_cafes_rest.add(new Location(getString(R.string.ceviche),getString(R.string.oldstround),getString(R.string.phonenum),getString(R.string.cafe_desc_seven),R.drawable.ceviche));
+        list_cafes_rest.add(new Location(getString(R.string.jamie),getString(R.string.oldstround),getString(R.string.phonenum),getString(R.string.cafe_desc_eight),R.drawable.fifteen));
+        list_cafes_rest.add(new Location(getString(R.string.nandos),getString(R.string.cityRoad),getString(R.string.phonenum),getString(R.string.cafe_desc_nine),R.drawable.nandos));
 
         LocationAdapter<Location> itemsAdapter = new LocationAdapter<>(getActivity(),list_cafes_rest);
 
@@ -47,7 +46,5 @@ public class RestaurantCafeFragment extends Fragment {
         listView.setAdapter(itemsAdapter);
 
         return rootView;
-
     }
-
 }

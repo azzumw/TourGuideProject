@@ -28,12 +28,12 @@ public class LocalShopsFragment extends Fragment {
 
         localshopslist = new ArrayList<>();
 
-        localshopslist.add(new Location(getString(R.string.sunstar),"135 City Road, Old Street",R.drawable.sunstar));
-        localshopslist.add(new Location(getString(R.string.sainsbury),"159 City Rd, Hoxton",getString(R.string.localGro)));
-        localshopslist.add(new Location(getString(R.string.sainsbury),"Old Street Roundabout",getString(R.string.localGro)));
-        localshopslist.add(new Location(getString(R.string.tesco),"","New North Road",getString(R.string.localGro),R.drawable.tesco));
-        localshopslist.add(new Location(getString(R.string.costc),"","202 City Road",getString(R.string.convenience),R.drawable.costcut));
-        localshopslist.add(new Location(getString(R.string.istanbulsuper),"213 City Road","202 City Road",getString(R.string.convenience),R.drawable.istanbul));
+        localshopslist.add(new Location(getString(R.string.sunstar),"135 "+getString(R.string.cityRoad)+", "+ getString(R.string.oldst),R.drawable.sunstar));
+        localshopslist.add(new Location(getString(R.string.sainsbury),"159 "+ getString(R.string.cityRoad),getString(R.string.localGro)));
+        localshopslist.add(new Location(getString(R.string.sainsbury),getString(R.string.oldstround),getString(R.string.localGro)));
+        localshopslist.add(new Location(getString(R.string.tesco),getString(R.string.nnr),getString(R.string.localGro),R.drawable.tesco));
+        localshopslist.add(new Location(getString(R.string.costc),"202 "+getString(R.string.cityRoad),getString(R.string.convenience),R.drawable.costcut));
+        localshopslist.add(new Location(getString(R.string.istanbulsuper),"213 "+ getString(R.string.cityRoad),getString(R.string.convenience),R.drawable.istanbul));
 
         LocationAdapter<Location> itemsAdapter = new LocationAdapter<>(getActivity(),localshopslist);
 

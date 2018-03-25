@@ -38,6 +38,13 @@ public class Location {
         this.description = description;
     }
 
+    public Location(String name, String address, String description, int imageResID){
+        this.name = name;
+        this.address = address;
+        this.description = description;
+        this.imageResID = imageResID;
+    }
+
     public Location(String name, String address, String phonenumber, String description, int imageResID) {
         this.name = name;
         this.address = address;

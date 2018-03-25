@@ -46,6 +46,5 @@ public class HotelFragment extends Fragment {
         listView.setAdapter(itemsAdapter);
 
         return rootview;
-
     }
 }

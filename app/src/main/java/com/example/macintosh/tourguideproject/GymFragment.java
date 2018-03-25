@@ -28,16 +28,16 @@ public class GymFragment extends Fragment {
 
         gym_list = new ArrayList<>();
 
-        gym_list.add(new Location(getString(R.string.gymbox),"201A Old Street",R.drawable.gymbox, "6am - 11pm"));
-        gym_list.add(new Location(getString(R.string.outrivals),"22 Hoxton street",R.drawable.outrivals,"Closes 9:30pm"));
-        gym_list.add(new Location(getString(R.string.manor),"Singer Street",R.drawable.manorec,"8am - 10:00pm"));
-        gym_list.add(new Location(getString(R.string.energiefit),"60-63 Bunhill Row",R.drawable.energie,"24 hours"));
-        gym_list.add(new Location(getString(R.string.thevault), "Zetland House, Old Street",R.drawable.thevault,"24 hours"));
-        gym_list.add(new Location(getString(R.string.nuffield),"1-6 Bateman's Row",R.drawable.nuffield,"24 hours"));
-        gym_list.add(new Location(getString(R.string.thefightcity),"15 Worship St",R.drawable.fightcity,"Closes 9pm"));
-        gym_list.add(new Location(getString(R.string.virgin),"333 Goswell Rd",R.drawable.virgin,"Closes 10pm"));
-        gym_list.add(new Location(getString(R.string.pureG),"8 Bacon Street",R.drawable.purelogo,"24/7"));
-        gym_list.add(new Location(getString(R.string.ff),getString(R.string.cityRoad),R.drawable.ff,"Closes 9pm"));
+        gym_list.add(new Location(getString(R.string.gymbox),"201A "+getString(R.string.oldst),R.drawable.gymbox, getString(R.string.sixToEleven)));
+        gym_list.add(new Location(getString(R.string.outrivals),getString(R.string.tthoxtonst),R.drawable.outrivals,getString(R.string.closesHalfNine)));
+        gym_list.add(new Location(getString(R.string.manor),getString(R.string.singerst),R.drawable.manorec,getString(R.string.eightToTen)));
+        gym_list.add(new Location(getString(R.string.energiefit),getString(R.string.bunhillrow),R.drawable.energie,getString(R.string.twentyfourseven)));
+        gym_list.add(new Location(getString(R.string.thevault), getString(R.string.zetland),R.drawable.thevault,getString(R.string.twentyfourseven)));
+        gym_list.add(new Location(getString(R.string.nuffield),getString(R.string.batemansrow),R.drawable.nuffield,getString(R.string.twentyfourseven)));
+        gym_list.add(new Location(getString(R.string.thefightcity),getString(R.string.worshipst),R.drawable.fightcity,getString(R.string.closesNine)));
+        gym_list.add(new Location(getString(R.string.virgin),getString(R.string.goswellrd),R.drawable.virgin,getString(R.string.closesTen)));
+        gym_list.add(new Location(getString(R.string.pureG),getString(R.string.bacon),R.drawable.purelogo,getString(R.string.twentyfourseven)));
+        gym_list.add(new Location(getString(R.string.ff),getString(R.string.cityRoad),R.drawable.ff,getString(R.string.closesNine)));
 
         LocationAdapter<Location> itemsAdapter = new LocationAdapter<>(getActivity(),gym_list);
 
@@ -47,5 +47,4 @@ public class GymFragment extends Fragment {
 
         return rootview;
     }
-
 }

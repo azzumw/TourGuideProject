@@ -3,7 +3,6 @@
     <string name="restaurants">Eatery</string>
     <string name="poi">Hotels</string>
     <string name="shops">Local shops</string>
-    <string name="fitness">Fitness</string>
     <string name="title_activity_transport">TransportActivity</string>
     <string name="name">Name</string>
     <string name="description">Description</string>
@@ -72,6 +71,27 @@
     <string name="convenience">Convenience Shop</string>
     <string name="localGro">Local Grocery Shop</string>
     <string name="cafe">Cafes</string>
+    <string name="hotels">Hotels</string>
+    <string name="fitness">Fitness</string>
+    <string name="pitfieldstreet">Pitfield Street</string>
+    <string name="bevenden">Bevenden Street</string>
+    <string name="oldstround">Old Street Roudabout</string>
+    <string name="phonenum">567876546</string>
+    <string name="nnr">New North Road</string>
+    <string name="goswellrd">333 Goswell Rd</string>
+    <string name="worshipst">15 Worship St</string>
+    <string name="batemansrow">1-6 Bateman\'s Row</string>
+    <string name="zetland">Zetland House, Old Street</string>
+    <string name="bunhillrow">60-63 Bunhill Row</string>
+    <string name="singerst">Singer Street</string>
+    <string name="tthoxtonst">22 Hoxton street</string>
+    <string name="bacon">8 Bacon Street</string>
+    <string name="twentyfourseven">24/7</string>
+    <string name="closesNine">Closes 9pm</string>
+    <string name="closesTen">Closes 10pm</string>
+    <string name="eightToTen">8am - 10:00pm</string>
+    <string name="closesHalfNine">Closes 9:30pm</string>
+    <string name="sixToEleven">6am - 11pm</string>
 
 
 </resources>
