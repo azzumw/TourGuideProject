@@ -2,7 +2,7 @@
     <string name="app_name">Old Street</string>
     <string name="restaurants">Eatery</string>
     <string name="poi">Hotels</string>
-    <string name="shops">Local shops</string>
+    <string name="shops">Shops</string>
     <string name="title_activity_transport">TransportActivity</string>
     <string name="name">Name</string>
     <string name="description">Description</string>
@@ -92,6 +92,17 @@
     <string name="eightToTen">8am - 10:00pm</string>
     <string name="closesHalfNine">Closes 9:30pm</string>
     <string name="sixToEleven">6am - 11pm</string>
+    <string name="onethirtyfive">135</string>
+    <string name="onefivenine">159</string>
+    <string name="twozerotwo">202</string>
+    <string name="twothirteen">213</string>
+    <string name="twozeroonea">201A</string>
+    <string name="eightone">81</string>
+    <string name="eighty">80</string>
+    <string name="threethirtyfive">335</string>
+    <string name="twoseventyfive">275</string>
+    <string name="onefiveone">151</string>
+    <string name="onethreesix">136-144</string>
 
 
 </resources>

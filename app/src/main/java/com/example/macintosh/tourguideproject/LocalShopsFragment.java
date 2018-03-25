@@ -28,12 +28,12 @@ public class LocalShopsFragment extends Fragment {
 
         localshopslist = new ArrayList<>();
 
-        localshopslist.add(new Location(getString(R.string.sunstar),"135 "+getString(R.string.cityRoad)+", "+ getString(R.string.oldst),R.drawable.sunstar));
-        localshopslist.add(new Location(getString(R.string.sainsbury),"159 "+ getString(R.string.cityRoad),getString(R.string.localGro)));
+        localshopslist.add(new Location(getString(R.string.sunstar),getString(R.string.onethirtyfive)+getString(R.string.cityRoad)+", "+ getString(R.string.oldst),R.drawable.sunstar));
+        localshopslist.add(new Location(getString(R.string.sainsbury),getString(R.string.onefivenine)+ getString(R.string.cityRoad),getString(R.string.localGro)));
         localshopslist.add(new Location(getString(R.string.sainsbury),getString(R.string.oldstround),getString(R.string.localGro)));
         localshopslist.add(new Location(getString(R.string.tesco),getString(R.string.nnr),getString(R.string.localGro),R.drawable.tesco));
-        localshopslist.add(new Location(getString(R.string.costc),"202 "+getString(R.string.cityRoad),getString(R.string.convenience),R.drawable.costcut));
-        localshopslist.add(new Location(getString(R.string.istanbulsuper),"213 "+ getString(R.string.cityRoad),getString(R.string.convenience),R.drawable.istanbul));
+        localshopslist.add(new Location(getString(R.string.costc),getString(R.string.twozerotwo)+getString(R.string.cityRoad),getString(R.string.convenience),R.drawable.costcut));
+        localshopslist.add(new Location(getString(R.string.istanbulsuper),getString(R.string.twothirteen)+ getString(R.string.cityRoad),getString(R.string.convenience),R.drawable.istanbul));
 
         LocationAdapter<Location> itemsAdapter = new LocationAdapter<>(getActivity(),localshopslist);
 

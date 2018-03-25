@@ -28,7 +28,7 @@ public class GymFragment extends Fragment {
 
         gym_list = new ArrayList<>();
 
-        gym_list.add(new Location(getString(R.string.gymbox),"201A "+getString(R.string.oldst),R.drawable.gymbox, getString(R.string.sixToEleven)));
+        gym_list.add(new Location(getString(R.string.gymbox),getString(R.string.twozeroonea)+getString(R.string.oldst),R.drawable.gymbox, getString(R.string.sixToEleven)));
         gym_list.add(new Location(getString(R.string.outrivals),getString(R.string.tthoxtonst),R.drawable.outrivals,getString(R.string.closesHalfNine)));
         gym_list.add(new Location(getString(R.string.manor),getString(R.string.singerst),R.drawable.manorec,getString(R.string.eightToTen)));
         gym_list.add(new Location(getString(R.string.energiefit),getString(R.string.bunhillrow),R.drawable.energie,getString(R.string.twentyfourseven)));

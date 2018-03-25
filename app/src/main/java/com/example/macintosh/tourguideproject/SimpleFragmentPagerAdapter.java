@@ -1,5 +1,7 @@
 package com.example.macintosh.tourguideproject;
 
+import android.content.ContentValues;
+import android.content.Context;
 import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,8 +13,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter{
 
-    public SimpleFragmentPagerAdapter(FragmentManager fm) {
+    Context  context;
+
+    public SimpleFragmentPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
+        this.context = context;
     }
 
     @Override
@@ -29,10 +34,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter{
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
-            case 0: return "Cafes";
-            case 1: return "Shops";
-            case 2: return "Hotels";
-            case 3: return "Fitness";
+            case 0: return context.getString(R.string.cafe);
+            case 1: return context.getString(R.string.shops);
+            case 2: return context.getString(R.string.hotels);
+            case 3: return context.getString(R.string.fitness);
             default:return null;
         }
     }
